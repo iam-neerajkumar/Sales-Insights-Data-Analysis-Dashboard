@@ -43,6 +43,6 @@ This project uses the following tools and technologies:
 
   ### 📸 Screenshots
 
-[Dashboard Overview](https://github.com/iam-neerajkumar/Sales-Insights-Data-Analysis-Dashboard/blob/main/Insights%20Data%20Analysis.PNG)
+![Dashboard Overview](https://github.com/iam-neerajkumar/Sales-Insights-Data-Analysis-Dashboard/blob/main/Insights%20Data%20Analysis.PNG?raw=true)
 
 
