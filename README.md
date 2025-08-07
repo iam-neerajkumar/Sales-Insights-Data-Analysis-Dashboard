@@ -35,14 +35,14 @@ This project uses the following tools and technologies:
 - **📍 Regional Focus:**  
   Identify revenue patterns and transaction counts in the Chennai market.
 
-### 📸 Screenshots
-
-[Dashboard Overview](images/dashboard-overview.png)
-
-
 - **📅 Time Trends:**  
   Understand monthly and yearly revenue, enabling seasonal trend analysis.
 
 - **👥 Customer Understanding:**  
   Track customer volume and identify opportunities for engagement or expansion.
+
+  ### 📸 Screenshots
+
+[Dashboard Overview](https://github.com/iam-neerajkumar/Sales-Insights-Data-Analysis-Dashboard/blob/main/Insights%20Data%20Analysis.PNG)
+
 
