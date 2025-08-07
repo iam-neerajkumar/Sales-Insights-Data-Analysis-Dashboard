@@ -1,54 +1,31 @@
 ## Sales Insights Data Analysis Project
 
-### Short Description / Purpose
+### 🎯 Short Description / Purpose
 
-This project demonstrates how to extract and analyze sales data using SQL queries and visualize the results using Power BI. The analysis includes customer insights, revenue tracking, and market-level segmentation with a focus on Chennai. It's ideal for learners and analysts exploring SQL-based data exploration and basic Power BI transformation.
+This project demonstrates my ability to extract, analyze, and visualize complex sales data using SQL and Power BI. It delivers actionable insights on customer behavior, revenue trends, and market segmentation with a focus on the Chennai region. The project showcases practical skills in writing efficient SQL queries, data transformation, and dashboard creation to support data-driven business decisions.
 
-### Data Analysis Using SQL
+### 🧰 Tech Stack
 
-1. Show all customer records
+This project uses the following tools and technologies:
 
-    `SELECT * FROM customers;`
+- **🛢️ MySQL**  
+  Used to store, query, and analyze the transactional and customer data via SQL.
 
-1. Show total number of customers
+- **📂 SQL (Structured Query Language)**  
+  Core language for data extraction, joining tables, aggregating metrics, and filtering records for insights.
 
-    `SELECT count(*) FROM customers;`
+- **📄 db_dump.sql**  
+  SQL dump file used to populate the MySQL database with all relevant tables and data.
 
-1. Show transactions for Chennai market (market code for chennai is Mark001
+- **📊 Power BI Desktop**  
+  For data visualization, dashboard creation, and business intelligence reporting.
 
-    `SELECT * FROM transactions where market_code='Mark001';`
+- **🧮 Power Query (M Language)**  
+  Used within Power BI to transform and clean data, including currency normalization logic.
 
-1. Show distrinct product codes that were sold in chennai
+- **📁 File Format**  
+  `.sql` for the database, `.pbix` for the Power BI report, and `.md` for documentation.
 
-    `SELECT distinct product_code FROM transactions where market_code='Mark001';`
-
-1. Show transactions where currency is US dollars
-
-    `SELECT * from transactions where currency="USD"`
-
-1. Show transactions in 2020 join by date table
-
-    `SELECT transactions.*, date.* FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020;`
-
-1. Show total revenue in year 2020,
-
-    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and transactions.currency="INR\r" or transactions.currency="USD\r";`
-	
-1. Show total revenue in year 2020, January Month,
-
-    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and and date.month_name="January" and (transactions.currency="INR\r" or transactions.currency="USD\r");`
-
-1. Show total revenue in year 2020 in Chennai
-
-    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020
-and transactions.market_code="Mark001";`
-
-
-#Data Analysis Using Power BI
-
-1. Formula to create norm_amount column
-
-`= Table.AddColumn(#"Filtered Rows", "norm_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*75 else [sales_amount], type any)`
 
 ### 💡 Business Impact & Insights
 
@@ -63,7 +40,5 @@ and transactions.market_code="Mark001";`
 
 - **👥 Customer Understanding:**  
   Track customer volume and identify opportunities for engagement or expansion.
-
-
 
 
